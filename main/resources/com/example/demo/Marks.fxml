@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="723.0" prefWidth="1396.0" style="-fx-background-color: #1B1C30;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox layoutY="1.0" prefHeight="730.0" prefWidth="242.0">
+            <children>
+                <AnchorPane prefHeight="722.0" prefWidth="242.0" style="-fx-background-color: #212238;">
+                    <children>
+                        <Button graphicTextGap="10.0" layoutX="20.0" layoutY="148.0" mnemonicParsing="false" onAction="#btnHomeClicked" prefHeight="48.0" prefWidth="202.0" style="-fx-background-color: #1B1C30; -fx-background-radius: 50px;" text="Home" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="32.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../img/Icons/HomeIcon.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <cursor>
+                                <Cursor fx:constant="OPEN_HAND" />
+                            </cursor>
+                            <effect>
+                                <Glow level="0.5" />
+                            </effect>
+                        </Button>
+                        <Button graphicTextGap="10.0" layoutX="20.0" layoutY="226.0" mnemonicParsing="false" onAction="#btnAttClicked" prefHeight="48.0" prefWidth="202.0" style="-fx-background-radius: 50px; -fx-background-color: #1B1C30; -fx-border-radius: 50px;" text="Attendance" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="32.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../img/Icons/calendar-free-icon-font.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <cursor>
+                                <Cursor fx:constant="OPEN_HAND" />
+                            </cursor>
+                            <effect>
+                                <Glow level="0.5" />
+                            </effect>
+                        </Button>
+                        <Button graphicTextGap="10.0" layoutX="20.0" layoutY="308.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="202.0" style="-fx-background-color: #5046BB; -fx-background-radius: 50px; -fx-border-radius: 50px; -fx-border-color: #ffffff;" text="Performance" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="32.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../img/Icons/stats-free-icon-font.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <cursor>
+                                <Cursor fx:constant="OPEN_HAND" />
+                            </cursor>
+                        </Button>
+                        <Button graphicTextGap="10.0" layoutX="23.0" layoutY="478.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="202.0" style="-fx-background-color: #1B1C30; -fx-background-radius: 50px;" text="About us" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="32.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../img/Icons/info-free-icon-font.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <cursor>
+                                <Cursor fx:constant="OPEN_HAND" />
+                            </cursor>
+                            <effect>
+                                <Glow level="0.5" />
+                            </effect>
+                        </Button>
+                        <Button graphicTextGap="10.0" layoutX="23.0" layoutY="390.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="202.0" style="-fx-background-color: #1B1C30; -fx-background-radius: 50px;" text="Settings" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="32.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../img/Icons/settings-free-icon-font.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <cursor>
+                                <Cursor fx:constant="OPEN_HAND" />
+                            </cursor>
+                            <effect>
+                                <Glow level="0.5" />
+                            </effect>
+                        </Button>
+                        <Button alignment="CENTER" cancelButton="true" defaultButton="true" graphicTextGap="10.0" layoutX="23.0" layoutY="648.0" mnemonicParsing="false" onAction="#btnGoClicked" prefHeight="48.0" prefWidth="202.0" style="-fx-background-color: #1B1C30; -fx-background-radius: 50px; -fx-border-color: #ffffff; -fx-border-radius: 50px;" text="Go Back" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="32.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../img/Icons/arrow.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <cursor>
+                                <Cursor fx:constant="OPEN_HAND" />
+                            </cursor>
+                            <effect>
+                                <Glow level="0.5" />
+                            </effect>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </children>
+        </VBox>
+        <ImageView fitHeight="114.0" fitWidth="150.0" layoutX="49.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../img/Icons/VBLogo.png" />
+            </image>
+        </ImageView>
+        <Text fill="WHITE" layoutX="304.0" layoutY="48.0" stroke="#5046bb" strokeType="OUTSIDE" text="Continous Internal Evaluation" textAlignment="CENTER" wrappingWidth="567.6825256347656">
+            <font>
+                <Font name="HP Simplified Jpan Light" size="37.0" />
+            </font>
+        </Text>
+        <AnchorPane layoutX="304.0" layoutY="72.0" prefHeight="300.0" prefWidth="259.0" style="-fx-background-color: #26273B; -fx-background-radius: 15px;">
+            <children>
+                <AnchorPane layoutX="12.0" layoutY="8.0" prefHeight="36.0" prefWidth="236.0" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: #5046BB;">
+                    <children>
+                        <Text fill="WHITE" layoutX="53.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Engineering Mathematics">
+                            <font>
+                                <Font size="15.0" />
+                            </font></Text>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="23.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../img/Icons/engineering.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <effect>
+                        <Glow />
+                    </effect>
+                </AnchorPane>
+                <Text fill="WHITE" layoutX="29.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUBJECT CODE :">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="14.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="29.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSE1">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="113.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSE2">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="103.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL CIE :" wrappingWidth="67.94550132751459">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="14.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="197.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSE3" wrappingWidth="50.959125995635986">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Label fx:id="matcie" alignment="CENTER" layoutX="99.0" layoutY="249.0" prefHeight="34.0" prefWidth="70.0" style="-fx-background-radius: 30PX; -fx-border-radius: 30px; -fx-border-color: #ffffff; -fx-border-width: 0.5px 0.5px 0.5px 0.5px;" stylesheets="@../../../style.css" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="26.0" />
+                    </font>
+                </Label>
+                <Text fill="WHITE" layoutX="125.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18MAT41A">
+                    <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                    </font>
+                </Text>
+                <Label fx:id="matm1" layoutX="31.0" layoutY="114.0" text="25" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Label fx:id="matm2" layoutX="116.0" layoutY="114.0" text="25" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Label fx:id="matm3" layoutX="201.0" layoutY="113.0" prefWidth="34.0" text="25" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="25.0" layoutY="113.0" prefHeight="3.0" prefWidth="50.0" />
+                <Separator layoutX="193.0" layoutY="112.0" prefHeight="3.0" prefWidth="50.0" />
+                <Separator layoutX="108.0" layoutY="113.0" prefHeight="3.0" prefWidth="50.0" />
+                <Text fill="WHITE" layoutX="77.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LA1" wrappingWidth="50.959125995635986">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Label fx:id="matl1" alignment="CENTER" layoutX="64.0" layoutY="175.0" prefHeight="38.0" prefWidth="50.0" text="5" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="65.0" layoutY="174.0" prefHeight="3.0" prefWidth="50.0" />
+                <Text fill="WHITE" layoutX="161.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LA2" wrappingWidth="50.959125995635986">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Label fx:id="matl2" alignment="CENTER" layoutX="149.0" layoutY="175.0" prefHeight="38.0" prefWidth="50.0" text="5" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="150.0" layoutY="174.0" prefHeight="3.0" prefWidth="50.0" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="576.0" layoutY="72.0" prefHeight="300.0" prefWidth="259.0" style="-fx-background-color: #26273B; -fx-background-radius: 15px;">
+            <children>
+                <AnchorPane layoutX="7.0" layoutY="8.0" prefHeight="36.0" prefWidth="236.0" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: #5046BB;">
+                    <children>
+                        <Text fill="WHITE" layoutX="30.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Design &amp; Analysis of Algorithms">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Text>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../img/Icons/algorithm.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <effect>
+                        <Glow />
+                    </effect>
+                </AnchorPane>
+                <Text fill="WHITE" layoutX="29.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUBJECT CODE :">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="14.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="100.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL CIE :" wrappingWidth="67.94550132751459">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="14.0" />
+                    </font>
+                </Text>
+                <Label fx:id="daacie" alignment="CENTER" layoutX="97.0" layoutY="251.0" prefHeight="34.0" prefWidth="70.0" style="-fx-background-radius: 30PX; -fx-border-radius: 30px; -fx-border-color: #ffffff; -fx-border-width: 0.5px 0.5px 0.5px 0.5px;" stylesheets="@../../../style.css" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="26.0" />
+                    </font>
+                </Label>
+                <Text fill="WHITE" layoutX="125.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18CS42">
+                    <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="27.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSE1">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="111.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSE2">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="195.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSE3" wrappingWidth="50.959125995635986">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Label fx:id="daam1" layoutX="29.0" layoutY="111.0" text="25" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Label fx:id="daam2" layoutX="114.0" layoutY="111.0" text="25" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Label fx:id="daam3" layoutX="199.0" layoutY="110.0" prefWidth="34.0" text="25" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="23.0" layoutY="110.0" prefHeight="3.0" prefWidth="50.0" />
+                <Separator layoutX="191.0" layoutY="109.0" prefHeight="3.0" prefWidth="50.0" />
+                <Separator layoutX="106.0" layoutY="110.0" prefHeight="3.0" prefWidth="50.0" />
+                <Text fill="WHITE" layoutX="72.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LA1" wrappingWidth="50.959125995635986">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Label fx:id="daal1" alignment="CENTER" layoutX="60.0" layoutY="173.0" prefHeight="38.0" prefWidth="50.0" text="5" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="60.0" layoutY="172.0" prefHeight="3.0" prefWidth="50.0" />
+                <Text fill="WHITE" layoutX="156.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LA2" wrappingWidth="50.959125995635986">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Label fx:id="daal2" alignment="CENTER" layoutX="145.0" layoutY="173.0" prefHeight="38.0" prefWidth="50.0" text="5" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="145.0" layoutY="172.0" prefHeight="3.0" prefWidth="50.0" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="849.0" layoutY="72.0" prefHeight="300.0" prefWidth="259.0" style="-fx-background-color: #26273B; -fx-background-radius: 15px;">
+            <children>
+                <AnchorPane layoutX="7.0" layoutY="8.0" prefHeight="36.0" prefWidth="236.0" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: #5046BB;">
+                    <children>
+                        <Text fill="WHITE" layoutX="34.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Database Management Systems">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Text>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="5.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../img/Icons/database-storage.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <effect>
+                        <Glow />
+                    </effect>
+                </AnchorPane>
+                <Text fill="WHITE" layoutX="29.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUBJECT CODE :">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="14.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="94.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL CIE :" wrappingWidth="67.94550132751459">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="14.0" />
+                    </font>
+                </Text>
+                <Label fx:id="dbmscie" alignment="CENTER" layoutX="90.0" layoutY="254.0" prefHeight="34.0" prefWidth="70.0" style="-fx-background-radius: 30PX; -fx-border-radius: 30px; -fx-border-color: #ffffff; -fx-border-width: 0.5px 0.5px 0.5px 0.5px;" stylesheets="@../../../style.css" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="26.0" />
+                    </font>
+                </Label>
+                <Text fill="WHITE" layoutX="125.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18CS43">
+                    <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="28.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSE1">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="112.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSE2">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="196.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSE3" wrappingWidth="50.959125995635986">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Label fx:id="dbmsm1" layoutX="30.0" layoutY="110.0" text="25" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Label fx:id="dbmsm2" layoutX="115.0" layoutY="110.0" text="25" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Label fx:id="dbmsm3" layoutX="200.0" layoutY="109.0" prefWidth="34.0" text="25" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="24.0" layoutY="109.0" prefHeight="3.0" prefWidth="50.0" />
+                <Separator layoutX="192.0" layoutY="108.0" prefHeight="3.0" prefWidth="50.0" />
+                <Separator layoutX="107.0" layoutY="109.0" prefHeight="3.0" prefWidth="50.0" />
+                <Text fill="WHITE" layoutX="78.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LA1" wrappingWidth="50.959125995635986">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Label fx:id="dbmsl1" alignment="CENTER" layoutX="66.0" layoutY="173.0" prefHeight="38.0" prefWidth="50.0" text="5" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="66.0" layoutY="172.0" prefHeight="3.0" prefWidth="50.0" />
+                <Text fill="WHITE" layoutX="162.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LA2" wrappingWidth="50.959125995635986">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Label fx:id="dbmsl2" alignment="CENTER" layoutX="150.0" layoutY="173.0" prefHeight="38.0" prefWidth="50.0" text="5" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="151.0" layoutY="172.0" prefHeight="3.0" prefWidth="50.0" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="1121.0" layoutY="72.0" prefHeight="300.0" prefWidth="259.0" style="-fx-background-color: #26273B; -fx-background-radius: 15px;">
+            <children>
+                <AnchorPane layoutX="7.0" layoutY="8.0" prefHeight="36.0" prefWidth="236.0" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: #5046BB;">
+                    <children>
+                        <Text fill="WHITE" layoutX="69.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Operating System">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Text>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="42.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../img/Icons/computer.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <effect>
+                        <Glow />
+                    </effect>
+                </AnchorPane>
+                <Text fill="WHITE" layoutX="29.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUBJECT CODE :">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="14.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="97.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL CIE :" wrappingWidth="67.94550132751459">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="14.0" />
+                    </font>
+                </Text>
+                <Label fx:id="oscie" alignment="CENTER" layoutX="94.0" layoutY="253.0" prefHeight="34.0" prefWidth="70.0" style="-fx-background-radius: 30PX; -fx-border-radius: 30px; -fx-border-color: #ffffff; -fx-border-width: 0.5px 0.5px 0.5px 0.5px;" stylesheets="@../../../style.css" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="26.0" />
+                    </font>
+                </Label>
+                <Text fill="WHITE" layoutX="125.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18CS44">
+                    <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="28.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSE1">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="112.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSE2">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="196.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSE3" wrappingWidth="50.959125995635986">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Label fx:id="osm1" layoutX="30.0" layoutY="109.0" text="25" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Label fx:id="osm2" layoutX="115.0" layoutY="109.0" text="25" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Label fx:id="osm3" layoutX="200.0" layoutY="108.0" prefWidth="34.0" text="25" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="24.0" layoutY="108.0" prefHeight="3.0" prefWidth="50.0" />
+                <Separator layoutX="192.0" layoutY="107.0" prefHeight="3.0" prefWidth="50.0" />
+                <Separator layoutX="107.0" layoutY="108.0" prefHeight="3.0" prefWidth="50.0" />
+                <Text fill="WHITE" layoutX="78.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LA1" wrappingWidth="50.959125995635986">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Label fx:id="osl1" alignment="CENTER" layoutX="65.0" layoutY="173.0" prefHeight="38.0" prefWidth="50.0" text="5" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="66.0" layoutY="172.0" prefHeight="3.0" prefWidth="50.0" />
+                <Text fill="WHITE" layoutX="162.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LA2" wrappingWidth="50.959125995635986">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Label fx:id="osl2" alignment="CENTER" layoutX="150.0" layoutY="173.0" prefHeight="38.0" prefWidth="50.0" text="5" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="151.0" layoutY="172.0" prefHeight="3.0" prefWidth="50.0" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="304.0" layoutY="387.0" prefHeight="300.0" prefWidth="259.0" style="-fx-background-color: #26273B; -fx-background-radius: 15px;">
+            <children>
+                <AnchorPane layoutX="11.0" layoutY="8.0" prefHeight="36.0" prefWidth="236.0" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: #5046BB;">
+                    <children>
+                        <Text fill="WHITE" layoutX="65.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="App Dev using Java">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Text>
+                        <ImageView fitHeight="26.0" fitWidth="25.0" layoutX="38.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../img/Icons/java-logo.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <effect>
+                        <Glow />
+                    </effect>
+                </AnchorPane>
+                <Text fill="WHITE" layoutX="29.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUBJECT CODE :">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="14.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="99.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL CIE :" wrappingWidth="67.94550132751459">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="14.0" />
+                    </font>
+                </Text>
+                <Label fx:id="javcie" alignment="CENTER" layoutX="97.0" layoutY="253.0" prefHeight="34.0" prefWidth="70.0" style="-fx-background-radius: 30PX; -fx-border-radius: 30px; -fx-border-color: #ffffff; -fx-border-width: 0.5px 0.5px 0.5px 0.5px;" stylesheets="@../../../style.css" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="26.0" />
+                    </font>
+                </Label>
+                <Text fill="WHITE" layoutX="125.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18CS45">
+                    <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="28.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSE1">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="112.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSE2">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="196.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSE3" wrappingWidth="50.959125995635986">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Label fx:id="javm1" layoutX="30.0" layoutY="111.0" text="25" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Label fx:id="javm2" layoutX="115.0" layoutY="111.0" text="25" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Label fx:id="javm3" layoutX="200.0" layoutY="110.0" prefWidth="34.0" text="25" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="24.0" layoutY="110.0" prefHeight="3.0" prefWidth="50.0" />
+                <Separator layoutX="192.0" layoutY="109.0" prefHeight="3.0" prefWidth="50.0" />
+                <Separator layoutX="107.0" layoutY="110.0" prefHeight="3.0" prefWidth="50.0" />
+                <Text fill="WHITE" layoutX="71.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LA1" wrappingWidth="50.959125995635986">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Label fx:id="javl1" alignment="CENTER" layoutX="59.0" layoutY="173.0" prefHeight="38.0" prefWidth="50.0" text="5" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="59.0" layoutY="172.0" prefHeight="3.0" prefWidth="50.0" />
+                <Text fill="WHITE" layoutX="155.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LA2" wrappingWidth="50.959125995635986">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Label fx:id="javl2" alignment="CENTER" layoutX="144.0" layoutY="173.0" prefHeight="38.0" prefWidth="50.0" text="5" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="144.0" layoutY="172.0" prefHeight="3.0" prefWidth="50.0" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="578.0" layoutY="387.0" prefHeight="300.0" prefWidth="259.0" style="-fx-background-color: #26273B; -fx-background-radius: 15px;">
+            <children>
+                <AnchorPane layoutX="12.0" layoutY="8.0" prefHeight="36.0" prefWidth="236.0" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: #5046BB;">
+                    <children>
+                        <Text fill="WHITE" layoutX="80.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DBMS Laboratory">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Text>
+                        <ImageView fitHeight="27.0" fitWidth="25.0" layoutX="50.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../img/Icons/database-management.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <effect>
+                        <Glow />
+                    </effect>
+                </AnchorPane>
+                <Text fill="WHITE" layoutX="29.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUBJECT CODE :">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="14.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="97.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL CIE :" wrappingWidth="67.94550132751459">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="14.0" />
+                    </font>
+                </Text>
+                <Label fx:id="dbmslcie" alignment="CENTER" layoutX="91.0" layoutY="254.0" prefHeight="34.0" prefWidth="70.0" style="-fx-background-radius: 30PX; -fx-border-radius: 30px; -fx-border-color: #ffffff; -fx-border-width: 0.5px 0.5px 0.5px 0.5px;" stylesheets="@../../../style.css" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="26.0" />
+                    </font>
+                </Label>
+                <Text fill="WHITE" layoutX="125.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18CSL47">
+                    <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="28.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSE1">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="112.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSE2">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="196.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSE3" wrappingWidth="50.959125995635986">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Label fx:id="dbmslm1" layoutX="30.0" layoutY="111.0" text="25" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Label fx:id="dbmslm2" layoutX="115.0" layoutY="111.0" text="25" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Label fx:id="dbmslm3" layoutX="200.0" layoutY="110.0" prefWidth="34.0" text="25" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="24.0" layoutY="110.0" prefHeight="3.0" prefWidth="50.0" />
+                <Separator layoutX="192.0" layoutY="109.0" prefHeight="3.0" prefWidth="50.0" />
+                <Separator layoutX="107.0" layoutY="110.0" prefHeight="3.0" prefWidth="50.0" />
+                <Text fill="WHITE" layoutX="71.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LA1" wrappingWidth="50.959125995635986">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Label fx:id="dbmsll1" alignment="CENTER" layoutX="61.0" layoutY="173.0" prefHeight="38.0" prefWidth="50.0" text="5" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="59.0" layoutY="172.0" prefHeight="3.0" prefWidth="50.0" />
+                <Text fill="WHITE" layoutX="155.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LA2" wrappingWidth="50.959125995635986">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Label fx:id="dbmsll2" alignment="CENTER" layoutX="143.0" layoutY="173.0" prefHeight="38.0" prefWidth="50.0" text="5" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="144.0" layoutY="172.0" prefHeight="3.0" prefWidth="50.0" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="849.0" layoutY="387.0" prefHeight="300.0" prefWidth="259.0" style="-fx-background-color: #26273B; -fx-background-radius: 15px;">
+            <children>
+                <AnchorPane layoutX="11.0" layoutY="8.0" prefHeight="36.0" prefWidth="236.0" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: #5046BB;">
+                    <children>
+                        <Text fill="WHITE" layoutX="81.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DAA Laboratory">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Text>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="48.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../img/Icons/daalab.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <effect>
+                        <Glow />
+                    </effect>
+                </AnchorPane>
+                <Text fill="WHITE" layoutX="29.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUBJECT CODE :">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="14.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="98.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL CIE :" wrappingWidth="67.94550132751459">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="14.0" />
+                    </font>
+                </Text>
+                <Label fx:id="daalcie" alignment="CENTER" layoutX="94.0" layoutY="256.0" prefHeight="34.0" prefWidth="70.0" style="-fx-background-radius: 30PX; -fx-border-radius: 30px; -fx-border-color: #ffffff; -fx-border-width: 0.5px 0.5px 0.5px 0.5px;" stylesheets="@../../../style.css" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="26.0" />
+                    </font>
+                </Label>
+                <Text fill="WHITE" layoutX="125.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18CSL48">
+                    <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="28.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSE1">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="112.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSE2">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="196.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSE3" wrappingWidth="50.959125995635986">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Label fx:id="daalm1" layoutX="30.0" layoutY="111.0" text="25" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Label fx:id="daalm2" layoutX="115.0" layoutY="111.0" text="25" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Label fx:id="daalm3" layoutX="200.0" layoutY="110.0" prefWidth="34.0" text="25" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="24.0" layoutY="110.0" prefHeight="3.0" prefWidth="50.0" />
+                <Separator layoutX="192.0" layoutY="109.0" prefHeight="3.0" prefWidth="50.0" />
+                <Separator layoutX="107.0" layoutY="110.0" prefHeight="3.0" prefWidth="50.0" />
+                <Text fill="WHITE" layoutX="75.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LA1" wrappingWidth="50.959125995635986">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Label fx:id="daall1" alignment="CENTER" layoutX="64.0" layoutY="173.0" prefHeight="38.0" prefWidth="50.0" text="5" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="63.0" layoutY="172.0" prefHeight="3.0" prefWidth="50.0" />
+                <Text fill="WHITE" layoutX="159.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LA2" wrappingWidth="50.959125995635986">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Label fx:id="daall2" alignment="CENTER" layoutX="149.0" layoutY="173.0" prefHeight="38.0" prefWidth="50.0" text="5" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="148.0" layoutY="172.0" prefHeight="3.0" prefWidth="50.0" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="1122.0" layoutY="386.0" prefHeight="300.0" prefWidth="259.0" style="-fx-background-color: #26273B; -fx-background-radius: 15px;">
+            <children>
+                <AnchorPane layoutX="12.0" layoutY="8.0" prefHeight="36.0" prefWidth="236.0" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: #5046BB;">
+                    <children>
+                        <Text fill="WHITE" layoutX="78.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Program Elective">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Text>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="47.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../img/Icons/application.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <effect>
+                        <Glow />
+                    </effect>
+                </AnchorPane>
+                <Text fill="WHITE" layoutX="29.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUBJECT CODE :">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="14.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="93.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL CIE :" wrappingWidth="78.62400054931629">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="14.0" />
+                    </font>
+                </Text>
+                <Label fx:id="pecie" alignment="CENTER" layoutX="87.0" layoutY="254.0" prefHeight="34.0" prefWidth="70.0" style="-fx-background-radius: 30PX; -fx-border-radius: 30px; -fx-border-color: #ffffff; -fx-border-width: 0.5px 0.5px 0.5px 0.5px;" stylesheets="@../../../style.css" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="26.0" />
+                    </font>
+                </Label>
+                <Text fill="WHITE" layoutX="125.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18CSE462">
+                    <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="28.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSE1">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="112.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSE2">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="196.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSE3" wrappingWidth="50.959125995635986">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Label fx:id="pem1" layoutX="30.0" layoutY="110.0" text="25" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Label fx:id="pem2" layoutX="115.0" layoutY="110.0" text="25" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Label fx:id="pem3" layoutX="200.0" layoutY="109.0" prefWidth="34.0" text="25" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="24.0" layoutY="109.0" prefHeight="3.0" prefWidth="50.0" />
+                <Separator layoutX="192.0" layoutY="108.0" prefHeight="3.0" prefWidth="50.0" />
+                <Separator layoutX="107.0" layoutY="109.0" prefHeight="3.0" prefWidth="50.0" />
+                <Text fill="WHITE" layoutX="77.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LA1" wrappingWidth="50.959125995635986">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Label fx:id="pel1" alignment="CENTER" layoutX="65.0" layoutY="173.0" prefHeight="38.0" prefWidth="50.0" text="5" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="65.0" layoutY="172.0" prefHeight="3.0" prefWidth="50.0" />
+                <Text fill="WHITE" layoutX="161.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LA2" wrappingWidth="50.959125995635986">
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <font>
+                        <Font name="HP Simplified Jpan Regular" size="18.0" />
+                    </font>
+                </Text>
+                <Label fx:id="pel2" alignment="CENTER" layoutX="150.0" layoutY="173.0" prefHeight="38.0" prefWidth="50.0" text="5" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic" size="30.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="150.0" layoutY="172.0" prefHeight="3.0" prefWidth="50.0" />
+            </children>
+        </AnchorPane>
+        <ImageView fitHeight="51.0" fitWidth="68.0" layoutX="1327.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../img/Icons/output-onlinepngtools-modified.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="1286.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../img/Icons/bell-free-icon-font.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="1242.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../img/Icons/interface-free-icon-font.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="1196.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../img/Icons/interrogation-free-icon-font.png" />
+            </image>
+        </ImageView>
+        <Label alignment="CENTER" layoutX="1297.0" layoutY="16.0" prefHeight="18.0" prefWidth="17.0" style="-fx-background-color: #5046BB; -fx-background-radius: 50px;" text="12" textFill="WHITE" />
+    </children>
+</AnchorPane>

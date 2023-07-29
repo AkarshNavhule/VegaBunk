@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="723.0" prefWidth="1396.0" style="-fx-background-color: #1B1C30;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane layoutX="305.0" layoutY="85.0" prefHeight="281.0" prefWidth="254.0" style="-fx-border-width: 2px 2px 2px 2px; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-background-color: #26273B;">
+            <children>
+                <ImageView fx:id="StudPic" fitHeight="114.0" fitWidth="146.0" layoutX="74.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true" />
+                <Label layoutX="75.0" layoutY="204.0" styleClass="shadow" stylesheets="@../../../style.css" text="USN" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="75.0" layoutY="229.0" styleClass="shadow" stylesheets="@../../../style.css" text="BRANCH" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="75.0" layoutY="177.0" styleClass="shadow" stylesheets="@../../../style.css" text="NAME" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="75.0" layoutY="255.0" styleClass="shadow" stylesheets="@../../../style.css" text="SEM" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="StudName" layoutX="143.0" layoutY="177.0" text="Label" textFill="WHITE" />
+                <Label fx:id="USN" layoutX="143.0" layoutY="204.0" text="Label" textFill="WHITE" />
+                <Label fx:id="StudBranch" layoutX="143.0" layoutY="229.0" text="Label" textFill="WHITE" />
+                <Label fx:id="StudSem" layoutX="143.0" layoutY="255.0" text="Label" textFill="WHITE" />
+                <Text fill="WHITE" fontSmoothingType="LCD" layoutX="100.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student" textAlignment="CENTER">
+                    <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                    </font>
+                </Text>
+            <Separator layoutX="76.0" layoutY="29.0" prefHeight="5.0" prefWidth="110.0" style="-fx-background-color: #5046BB;" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="573.0" layoutY="86.0" prefHeight="271.0" prefWidth="330.0" style="-fx-border-width: 2px 2px 2px 2px; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-background-color: #26273B;">
+            <children>
+                <PieChart fx:id="DashPie" layoutX="-5.0" layoutY="-2.0" legendVisible="false" prefHeight="288.0" prefWidth="339.0" stylesheets="@../../../style.css" AnchorPane.bottomAnchor="-15.0" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="-4.0" AnchorPane.topAnchor="-2.0">
+                    <styleClass>
+                        <String fx:value="default-color0" />
+                        <String fx:value="default-color1" />
+                    </styleClass></PieChart>
+                <Button alignment="BOTTOM_RIGHT" layoutX="238.0" layoutY="238.0" mnemonicParsing="false" onAction="#btnAttClicked" style="-fx-background-color: #5046BB; -fx-background-radius: 20px; -fx-border-radius: 20px;" text="Explore            " textFill="#fff7f7">
+                    <font>
+                        <Font name="HP Simplified Hans Regular" size="12.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                    </cursor>
+                </Button>
+                <Text fill="WHITE" fontSmoothingType="LCD" layoutX="122.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attendance" textAlignment="CENTER">
+                    <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                    </font>
+                </Text>
+                <Separator layoutX="73.0" layoutY="26.0" prefHeight="5.0" prefWidth="201.0" style="-fx-background-color: #5046BB;" />
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="289.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../img/Icons/arrow-right-free-icon-font.png" />
+                    </image>
+                </ImageView>
+            </children></AnchorPane>
+        <AnchorPane layoutX="918.0" layoutY="85.0" prefHeight="242.0" prefWidth="460.0" style="-fx-border-width: 2px 2px 2px 2px; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-background-color: #26273B;">
+            <children>
+                <BarChart fx:id="DashBar" layoutX="17.0" layoutY="63.0" legendVisible="false" prefHeight="182.0" prefWidth="270.0" stylesheets="@../../../style.css" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="61.0">
+                    <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis side="LEFT" />
+                    </yAxis>
+                    <styleClass>
+                        <String fx:value="default-color0" />
+                        <String fx:value="default-color1" />
+                        <String fx:value="default-color2" />
+                        <String fx:value="default-color3" />
+                        <String fx:value="default-color4" />
+                        <String fx:value="default-color5" />
+                        <String fx:value="default-color6" />
+                        <String fx:value="default-color7" />
+                        <String fx:value="axis-label" />
+                        <String fx:value="axis" />
+                    </styleClass>
+                </BarChart>
+                <Text fill="WHITE" fontSmoothingType="LCD" layoutX="208.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CIE Marks" textAlignment="CENTER">
+                    <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                    </font>
+                </Text>
+                <Separator layoutX="171.0" layoutY="23.0" prefHeight="5.0" prefWidth="156.0" style="-fx-background-color: #5046BB;" />
+                <Button alignment="BOTTOM_RIGHT" layoutX="365.0" layoutY="208.0" mnemonicParsing="false" onAction="#btnMarksClicked" style="-fx-background-color: #5046BB; -fx-background-radius: 20px; -fx-border-radius: 20px;" text="Explore            " textFill="#fff7f7">
+                    <font>
+                        <Font name="HP Simplified Hans Regular" size="12.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                    </cursor>
+                </Button>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="416.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../img/Icons/arrow-right-free-icon-font.png" />
+                    </image>
+                </ImageView>
+            </children></AnchorPane>
+        <AnchorPane layoutX="300.0" layoutY="379.0" prefHeight="322.0" prefWidth="242.0" style="-fx-border-width: 2px 2px 2px 2px; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-background-color: #26273B;">
+            <children>
+                <ScrollBar layoutX="222.0" layoutY="50.0" orientation="VERTICAL" prefHeight="255.0" prefWidth="14.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #5046BB;" />
+                <AnchorPane layoutX="21.0" layoutY="12.0" prefHeight="36.0" prefWidth="197.0" style="-fx-background-color: transparent; -fx-background-radius: 50px; -fx-border-radius: 50px; -fx-border-color: #5046BB;">
+                    <children>
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="54.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Announcements" textAlignment="CENTER">
+                            <font>
+                                <Font name="Century Gothic Bold" size="15.0" />
+                            </font>
+                        </Text>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="23.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../img/Icons/megaphone-free-icon-font.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="61.0" prefHeight="82.0" prefWidth="204.0">
+               <children>
+                  <Text fill="WHITE" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12">
+                     <font>
+                        <Font name="HP Simplified Jpan Regular" size="48.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="9.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MAY">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="57.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Annual National Level Techno cultural Fest - Anaadyanta 2022" wrappingWidth="146.0">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </Text>
+                  <Separator layoutX="2.0" layoutY="77.0" prefWidth="200.0" style="-fx-background-color: #5046BB;" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="11.0" layoutY="139.0" prefHeight="82.0" prefWidth="204.0">
+               <children>
+                  <Text fill="WHITE" layoutX="16.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" textAlignment="CENTER">
+                     <font>
+                        <Font name="HP Simplified Jpan Regular" size="48.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="9.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MAY">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="60.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MoU between NMIT, Bangalore and Capgemini Engineering, India" wrappingWidth="146.0">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </Text>
+                  <Separator layoutX="5.0" layoutY="81.0" prefWidth="200.0" style="-fx-background-color: #5046BB;" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="12.0" layoutY="221.0" prefHeight="82.0" prefWidth="204.0">
+               <children>
+                  <Text fill="WHITE" layoutX="2.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="27" textAlignment="CENTER">
+                     <font>
+                        <Font name="HP Simplified Jpan Regular" size="48.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="6.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="APRIL">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="59.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dept. of ECE conducted an event on &quot;World Telecommunications and Information Day 2022" wrappingWidth="146.0">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="557.0" layoutY="369.0" prefHeight="335.0" prefWidth="432.0" style="-fx-border-width: 2px 2px 2px 2px; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-background-color: #26273B;">
+            <children>
+                <Label layoutX="97.0" layoutY="51.0" styleClass="shadow" stylesheets="@../../../style.css" text="Subject" textFill="#fffbfb">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <Label layoutX="215.0" layoutY="51.0" styleClass="shadow" stylesheets="@../../../style.css" text="Expected Percentage" textFill="#fffbfb">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <Label fx:id="bunk" alignment="CENTER" layoutX="65.0" layoutY="265.0" text="Number of Classes Missable: " textFill="#fffbfb">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="ExpPerc" layoutX="219.0" layoutY="78.0" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: #5046BB;" />
+                <Label fx:id="remaining" alignment="CENTER" layoutX="134.0" layoutY="206.0" text="Remaining Classes:" textFill="#fffbfb">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <Button layoutX="172.0" layoutY="130.0" mnemonicParsing="false" onAction="#btnBunkClicked" style="-fx-background-color: #5046BB;" text="CALCULATE" textFill="#f7f3f3">
+                    <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                    </cursor></Button>
+                <ComboBox fx:id="mainSubjectBox" layoutX="81.0" layoutY="77.0" prefHeight="7.0" prefWidth="91.0" style="-fx-background-color: #ffffff;" />
+                <AnchorPane layoutX="8.0" layoutY="7.0" prefHeight="36.0" prefWidth="407.0" style="-fx-background-color: transparent; -fx-background-radius: 50px; -fx-border-radius: 50px; -fx-border-color: #5046BB;">
+                    <children>
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="157.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VegaBunk Calculator" textAlignment="CENTER">
+                            <font>
+                                <Font name="Century Gothic Bold" size="15.0" />
+                            </font>
+                        </Text>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="121.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../img/Icons/VBLogo.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+            </children></AnchorPane>
+        <AnchorPane layoutX="1002.0" layoutY="343.0" prefHeight="353.0" prefWidth="366.0" style="-fx-border-width: 2px 2px 2px 2px; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-background-color: #26273B;">
+            <children>
+                <AnchorPane layoutX="12.0" layoutY="11.0" prefHeight="36.0" prefWidth="345.0" style="-fx-background-color: transparent; -fx-background-radius: 50px; -fx-border-radius: 50px; -fx-border-color: #5046BB;">
+                    <children>
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="151.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To Do/Tasks" textAlignment="CENTER">
+                            <font>
+                                <Font name="Century Gothic Bold" size="15.0" />
+                            </font>
+                        </Text>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="117.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../img/Icons/list-check-free-icon-font.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+                <CheckBox layoutX="38.0" layoutY="68.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="312.0" style="-fx-background-color: transparent;" stylesheets="@../../../style.css" text="Java Assignment-A3 submission" textFill="WHITE" />
+                <CheckBox layoutX="38.0" layoutY="102.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="312.0" style="-fx-background-color: transparent;" stylesheets="@../../../style.css" text="Upload details for NPTEL Course" textFill="WHITE" />
+                <CheckBox layoutX="38.0" layoutY="138.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="312.0" style="-fx-background-color: transparent;" stylesheets="@../../../style.css" text="LA-2 Component ( 18MAT41 )" textFill="WHITE" />
+                <CheckBox layoutX="38.0" layoutY="173.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="312.0" style="-fx-background-color: transparent;" stylesheets="@../../../style.css" text="Batch Exit for 2022-2023" textFill="WHITE" />
+            <CheckBox layoutX="38.0" layoutY="210.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="312.0" style="-fx-background-color: transparent;" stylesheets="@../../../style.css" text="Develop Web Application Project" textFill="WHITE" />
+            <CheckBox layoutX="38.0" layoutY="245.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="312.0" style="-fx-background-color: transparent;" stylesheets="@../../../style.css" text="Meetup with the HOD" textFill="WHITE" />
+            <CheckBox layoutX="38.0" layoutY="279.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="312.0" style="-fx-background-color: transparent;" stylesheets="@../../../style.css" text="Prepare for upcoming MSEs" textFill="WHITE" />
+            </children></AnchorPane>
+        <VBox layoutX="-1.0" layoutY="-3.0" prefHeight="730.0" prefWidth="242.0">
+            <children>
+                <AnchorPane prefHeight="726.0" prefWidth="242.0" style="-fx-background-color: #212238;">
+                    <children>
+                        <Button graphicTextGap="10.0" layoutX="20.0" layoutY="148.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="202.0" style="-fx-background-color: #5046BB; -fx-background-radius: 50px;" text="Home" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="32.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../img/Icons/HomeIcon.png" />
+                                    </image></ImageView>
+                            </graphic>
+                        </Button>
+                        <Button graphicTextGap="10.0" layoutX="20.0" layoutY="226.0" mnemonicParsing="false" onAction="#btnAttClicked" prefHeight="48.0" prefWidth="202.0" style="-fx-background-color: #1B1C30; -fx-background-radius: 50px;" text="Attendance" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="32.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../img/Icons/calendar-free-icon-font.png" />
+                                    </image></ImageView>
+                            </graphic>
+                            <cursor>
+                                <Cursor fx:constant="OPEN_HAND" />
+                            </cursor>
+                            <effect>
+                                <Glow level="0.5" />
+                            </effect>
+                        </Button>
+                        <Button graphicTextGap="10.0" layoutX="20.0" layoutY="308.0" mnemonicParsing="false" onAction="#btnMarksClicked" prefHeight="48.0" prefWidth="202.0" style="-fx-background-color: #1B1C30; -fx-background-radius: 50px;" text="Performance" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="32.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../img/Icons/stats-free-icon-font.png" />
+                                    </image></ImageView>
+                            </graphic>
+                            <cursor>
+                                <Cursor fx:constant="OPEN_HAND" />
+                            </cursor>
+                            <effect>
+                                <Glow level="0.5" />
+                            </effect>
+                        </Button>
+                        <Button graphicTextGap="10.0" layoutX="23.0" layoutY="478.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="202.0" style="-fx-background-color: #1B1C30; -fx-background-radius: 50px;" text="About us" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="32.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../img/Icons/info-free-icon-font.png" />
+                                    </image></ImageView>
+                            </graphic>
+                            <cursor>
+                                <Cursor fx:constant="OPEN_HAND" />
+                            </cursor>
+                            <effect>
+                                <Glow level="0.5" />
+                            </effect>
+                        </Button>
+                        <Button graphicTextGap="10.0" layoutX="23.0" layoutY="390.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="202.0" style="-fx-background-color: #1B1C30; -fx-background-radius: 50px;" text="Settings" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="32.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../img/Icons/settings-free-icon-font.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <cursor>
+                                <Cursor fx:constant="OPEN_HAND" />
+                            </cursor>
+                            <effect>
+                                <Glow level="0.5" />
+                            </effect>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </children>
+        </VBox>
+        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+        <TextField layoutX="1049.0" layoutY="29.0" prefHeight="30.0" prefWidth="262.0" promptText="                                                       Search" style="-fx-background-radius: 50px; -fx-border-radius: 50px; -fx-border-color: #ffffff; -fx-border-width: 1px 1px 1px 1px;" styleClass="anchorContainer" stylesheets="@../../../style.css">
+            <font>
+                <Font name="System Italic" size="12.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor></TextField>
+        <ImageView fitHeight="37.0" fitWidth="43.0" layoutX="1321.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../img/Icons/output-onlinepngtools-modified.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="20.0" fitWidth="31.0" layoutX="1282.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../img/Icons/search-free-icon-font.png" />
+            </image>
+        </ImageView>
+        <Text fill="WHITE" layoutX="300.0" layoutY="60.0" stroke="#5046bb" strokeType="OUTSIDE" text="Student Dashboard" textAlignment="CENTER" wrappingWidth="366.4000000000001">
+            <font>
+                <Font name="HP Simplified Jpan Light" size="37.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="1008.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../img/Icons/bell-free-icon-font.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="114.0" fitWidth="150.0" layoutX="48.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../img/Icons/VBLogo.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="964.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../img/Icons/interface-free-icon-font.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="918.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../img/Icons/interrogation-free-icon-font.png" />
+            </image>
+        </ImageView>
+        <Label alignment="CENTER" layoutX="1018.0" layoutY="24.0" prefHeight="18.0" prefWidth="17.0" style="-fx-background-color: #5046BB; -fx-background-radius: 50px;" text="12" textFill="WHITE" />
+    </children>
+</AnchorPane>
